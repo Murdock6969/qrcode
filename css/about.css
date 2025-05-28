@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1A270B;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    position: relative;
+    
+}
+@font-face {
+    font-family: game1;
+    src: url(gameing-type-1.ttf);
+}
+@font-face {
+    font-family: game2;
+    src: url(gaming-type-2.ttf);
+}
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 100px;
+    /* background-color: aquamarine; */
+    align-items: center;
+}
+
+.header-main h1{
+    font-family:game1;
+    font-weight: 100;
+    border: solid #7EBC03 1px;
+    border-radius: 45px;
+    padding: 8px 15px;
+    color: #7EBC03;
+    font-size: 40px;
+}
+
+.header-main p {
+    font-family: game1;
+    padding-bottom: 10px;
+    color: #7EBC03;
+}
+.content-main{
+    display: flex;
+    justify-content: center;
+}
+.content-main p{
+    font-family: game1;
+    color: #7EBC03;
+    font-weight: 100;
+    padding-top: 20px;
+}
+.back-words{
+    display: flex;
+    justify-content: center;
+    
+}
+.back-words h1{
+    -webkit-text-stroke: 1px #7EBC03;
+    color: transparent;
+    font-family: game2;
+    font-weight: 100;
+    opacity: 80%;
+    font-size: 200px;
+    padding-top: 100px;
+    position: absolute;
+    z-index: -1;
+
+}
+.qr-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+.qr-main img{
+    height: 150px;
+}
+.footer-two{
+    display: flex;
+    justify-content: center;
+}
+.footer-two p{
+    color: #7EBC03;
+    opacity: 30%;
+    font-family: game1;
+    padding-top: 100px;
+}
+.back-img {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    /* width: 100vw; Span the full screen */
+    /* height: auto; */
+    /* transform: translate(-50%, -50%); */
+    z-index: -1; /* Push it behind */
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgone {
+    position: absolute;
+    left: -800px; /* Move half of it outside the screen */
+    top: 30px;
+    transform: translateY(-75%);
+    width: 280px; 
+    /* Adjust size as needed */
+}
+
+.imgtwo {
+    position: absolute;
+    right: -800px; /* Move half of it outside the screen */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 290px;
+     /* Adjust size as needed */
+}
+
+
