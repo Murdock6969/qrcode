@@ -2,8 +2,6 @@ const express = require('express')
 const app = express();
 const qrcode = require('qrcode');
 const path = require('path');
-const { request } = require('http');
-const { log } = require('console');
 
 app.set('view engine','ejs')
 app.use(express.json());
